@@ -95,7 +95,7 @@ exports.list = function(req, res) {
 
 exports.listByCreator = function (req, res, next, cname) {
   console.log(cname);
-  Lead.find({ name : cname }).exec(function(err, leads) {
+  Lead.find({ attendedBy : cname }).exec(function(err, leads) {
     if (err) {
       return res.status(400).send({
         message: errorHandler.getErrorMessage(err)

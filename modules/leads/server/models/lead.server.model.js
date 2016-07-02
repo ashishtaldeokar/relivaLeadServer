@@ -13,14 +13,13 @@ var LeadSchema = new Schema({
   name: {
     type: String,
     default: '',
-    required: 'Please fill Lead name',
     trim: true
   },
   mobile :{
     type : Number,
     default : null
   },
-  leadName:{
+  callerName:{
     type : String,
     default: ''
   },
