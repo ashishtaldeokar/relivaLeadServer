@@ -43,8 +43,13 @@ var LeadSchema = new Schema({
     type : String,
     default : ''
   },
-  condition : {
-
+  condition_name : {
+    type : String,
+    default : ''
+  },
+  condition_type : {
+    type : String,
+    default : ''
   },
   location : {
     type : String,
